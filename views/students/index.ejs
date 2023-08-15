@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Students - University of Hollywood</title>
+</head>
+<body>
+    <h1>University of Hollywood</h1>
+    <h2>Student Directory</h2>
+    <ul>
+      <% students.forEach(function(t) { %>
+        <li>
+          <%= t.student %>
+            - 
+          <%= t.status%>
+        </li>
+      <% }); %>
+    </ul>
+</body>
+</html>
